@@ -29,7 +29,7 @@ namespace NoteTaking
             dataGridView1.DataSource = _table;
 
             dataGridView1.Columns["Messeges"].Visible = false;
-            dataGridView1.Columns["Title"].Width = dataGridView1.Size.Width;
+            dataGridView1.Columns["Title"].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
         }
 
         private void btnNew_Click(object sender, EventArgs e)
